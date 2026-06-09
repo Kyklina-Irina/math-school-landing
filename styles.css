@@ -1,0 +1,156 @@
+/* Сброс стандартных стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Базовые стили для body */
+body {
+    font-family: 'Roboto', sans-serif;
+    /* Цвет фона: темно-синий, почти черный */
+    background-color: #0c0c1a;
+    color: #e0e0e0; /* Жемчужно-серый основной текст */
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Стили для обертки 3D фона */
+#canvas-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Основной контент */
+.main-content {
+    position: relative;
+    z-index: 10;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Заголовок */
+.header h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-transform: uppercase; /* Прописные буквы */
+    /* Цвет заголовка: неоново-голубой */
+    color: #00ffff;
+    /* Эффект вензелей (тень) */
+    text-shadow:
+        0 0 5px #00ffff,
+        0 0 10px #00ffff,
+        0 0 20px #00ffff;
+}
+
+/* Заголовки второго уровня */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase; /* Прописные буквы */
+    /* Цвет заголовков: неоново-голубой */
+    color: #00ffff;
+    /* Эффект вензелей (тень) */
+    text-shadow:
+        0 0 5px #00ffff,
+        0 0 10px #00ffff;
+}
+
+.header p {
+    text-align: center;
+    font-size: 1.2rem;
+    /* Цвет подзаголовка: жемчужно-серый */
+    color: #e0e0e0;
+    margin-bottom: 3rem;
+}
+
+/* Стили для секций */
+section {
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    background-color: rgba(15, 15, 35, 0.6); /* Сlightly lighter dark bg for contrast */
+    border-radius: 8px;
+    border: 1px solid rgba(0, 255, 255, 0.2); /* Border matching header color */
+}
+
+/* Основной текст и список */
+p, li {
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+    /* Цвет основного текста: жемчужно-серый */
+    color: #e0e0e0;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 1rem;
+}
+
+li::before {
+    content: "✦ "; /* Символ перед списком */
+    color: #00ffff; /* Неоново-голубой для маркера */
+}
+
+/* Стили для формы */
+#registrationForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#registrationForm input,
+#registrationForm select {
+    padding: 0.8rem;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #1a1a2a;
+    color: #e0e0e0; /* Жемчужно-серый текст внутри */
+}
+
+#registrationForm button {
+    padding: 1rem;
+    background-color: #00ffff; /* Неоново-голубой */
+    color: #0c0c1a; /* Темно-синий текст */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase; /* Прописные буквы */
+}
+
+#registrationForm button:hover {
+    background-color: #00cccc; /* Темнее при наведении */
+}
+
+/* Стили для кнопок внешних ссылок */
+.external-links-section {
+    text-align: center;
+}
+
+.external-link-btn {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 1rem 2rem;
+    background-color: #00ffff; /* Неоново-голубой */
+    color: #0c0c1a; /* Темно-синий текст */
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-transform: uppercase; /* Прописные буквы */
+}
+
+.external-link-btn:hover {
+    transform: scale(1.05);
+    box-shadow:
+        0 0 10px #00ffff,
+        0 0 20px #00ffff;
+}

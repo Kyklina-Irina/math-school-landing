@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Школа Высшей Математики "Бесконечность"</title>
+    <!-- Подключаем файл стилей -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Подключаем шрифт Roboto для современного вида -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Обертка для 3D фигуры (фон) -->
+    <div id="canvas-container"></div>
+
+    <!-- Основной контент -->
+    <main class="main-content">
+        <header class="header">
+            <h1>Школа Высшей Математики<br><span class="highlight">"Бесконечность"</span></h1>
+            <p>Раскройте потенциал своей логики и воображения</p>
+        </header>
+
+        <section class="about-section">
+            <h2>О Нас</h2>
+            <p>"Бесконечность" — это современная школа для тех, кто хочет понять и полюбить математику. Мы предлагаем уникальные курсы, разработанные опытными преподавателями, которые делают сложное простым и увлекательным.</p>
+        </section>
+
+        <section class="courses-section">
+            <h2>Наши Курсы</h2>
+            <ul>
+                <li>Алгебра и начала анализа (10-11 класс)</li>
+                <li>Математический анализ для студентов</li>
+                <li>Теория вероятностей и статистика</li>
+                <li>Подготовка к ЕГЭ по математике</li>
+                <li>Продвинутая геометрия</li>
+            </ul>
+        </section>
+
+        <section class="contact-section">
+            <h2>Контакты</h2>
+            <p>Email: info@infinity-math.ru</p>
+            <p>Телефон: +7 (XXX) XXX-XX-XX</p>
+            <p>Адрес: г. [Ваш город], ул. [Ваша улица], д. X</p>
+        </section>
+
+        <section class="form-section">
+            <h2>Запишитесь на курс</h2>
+            <form id="registrationForm">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <select name="course" required>
+                    <option value="" disabled selected>Выберите курс</option>
+                    <option value="algebra">Алгебра и начала анализа</option>
+                    <option value="analysis">Математический анализ</option>
+                    <option value="prob">Теория вероятностей</option>
+                    <option value="ege">Подготовка к ЕГЭ</option>
+                    <option value="geometry">Продвинутая геометрия</option>
+                </select>
+                <button type="submit">Отправить заявку</button>
+            </form>
+        </section>
+
+        <!-- Секция с кнопками для перехода на другие ресурсы -->
+        <section class="external-links-section">
+            <h2>Перейти к обучению</h2>
+            <a href="https://example-learning-platform.com" target="_blank" class="external-link-btn">Платформа обучения</a>
+            <a href="https://youtube.com/channel/math_channel" target="_blank" class="external-link-btn">YouTube канал</a>
+            <a href="https://vk.com/math_school" target="_blank" class="external-link-btn">Группа ВКонтакте</a>
+        </section>
+
+    </main>
+
+    <!-- Подключаем Three.js из CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Подключаем файл скриптов -->
+    <script src="script.js"></script>
+</body>
+</html>
